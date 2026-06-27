@@ -1,6 +1,6 @@
-readme_content = """# 🛍️ Smart Shop Assistant
+# 🛍️ Smart Shop Assistant
 
-A lightweight, serverless conversational AI shopping assistant powered by **Groq Cloud (LLaMA 3.3 70B)** and **Gradio**. This project showcases native **Function Calling (Tool Use)** with an LLM, allowing the model to dynamically look up real-time product pricing dynamically from an internal inventory system when required, while falling back to natural conversation for general inquiries.
+A lightweight, serverless conversational AI shopping assistant powered by **Groq Cloud (LLaMA 3.3 70B)** and **Gradio**. This project showcases native **Function Calling (Tool Use)** with an LLM, allowing the model to dynamically look up real-time product pricing from an internal inventory system when required, while falling back to natural conversation for general inquiries.
 
 ---
 
@@ -16,3 +16,10 @@ The assistant leverages an agentic design pattern utilizing deterministic tool i
 ---
 
 ## 📂 Project Repository Directory Layout
+
+```text
+Smart Shop Assistant/
+├── .env                  # Local workspace secrets management (API Keys)
+├── .gitignore            # Git exclusion directory management
+├── agent.py              # LLM client logic, system instructions, and tool schemas
+└── app.py                # Gradio UI presentation layer & state mapping
